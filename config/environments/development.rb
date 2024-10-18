@@ -1,6 +1,8 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  # Allow persistent ngrok URL 
+  config.hosts << "quetzal-definite-sharply.ngrok-free.app"
   # Allow ngrok tunnels for secure Shopify OAuth redirects
   config.hosts = (config.hosts rescue []) << /[-\w]+\.ngrok\.io/
   # Allow Cloudflare tunnels for secure Shopify OAuth redirects
