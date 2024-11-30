@@ -62,4 +62,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "shopify_app", "~> 22.4"
+gem "shopify_app", "~> 22.5"
